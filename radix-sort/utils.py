@@ -5,7 +5,6 @@ def parse_input(text):
         return None
 
     try:
-        nums = list(map(int, text.split()))
-        return nums
+        return list(map(int, text.split()))
     except ValueError:
         return "invalid"
